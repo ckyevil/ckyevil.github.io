@@ -1,7 +1,7 @@
 
 body {
     padding: 50px;
-    background-image: url('客户端终2.png'); /* 设置背景照片的路径 */
+    background-image: url('客户端终2.PNG'); /* 设置背景照片的路径 */
     background-size: cover; /* 让背景照片铺满整个页面 */
     background-position: center center;
     min-height: 100vh; /* 设置最小高度为视口高度 */
