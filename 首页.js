@@ -161,13 +161,13 @@ $('body').css('cursor', 'default');
   })();   
   
   document.getElementById("Client").addEventListener("click", function() {
-    window.location.href = "http://127.0.0.1:5501/source/%E5%AE%A2%E6%88%B7%E7%AB%AF.html"; // 在这里填写你要跳转的网页地址
+    window.location.href = "客户端.html"; // 在这里填写你要跳转的网页地址
 });
 
 document.getElementById("Server").addEventListener("click", function() {
-    window.location.href = "http://127.0.0.1:5501/source/%E5%AE%A2%E6%88%B7%E7%AB%AF.html"; // 在这里填写你要跳转的网页地址
+    window.location.href = "服务端 copy.html"; // 在这里填写你要跳转的网页地址
 });
 
 document.getElementById("Apply").addEventListener("click", function() {
-    window.location.href = "http://127.0.0.1:5501/source/%E5%AE%A2%E6%88%B7%E7%AB%AF.html"; // 在这里填写你要跳转的网页地址
+    window.location.href = "应用端.html"; // 在这里填写你要跳转的网页地址
 });
