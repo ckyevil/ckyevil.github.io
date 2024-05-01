@@ -165,7 +165,7 @@ $('body').css('cursor', 'default');
 });
 
 document.getElementById("Server").addEventListener("click", function() {
-    window.location.href = "服务端 copy.html"; // 在这里填写你要跳转的网页地址
+    window.location.href = "服务端 copy 2.html"; // 在这里填写你要跳转的网页地址
 });
 
 document.getElementById("Apply").addEventListener("click", function() {
