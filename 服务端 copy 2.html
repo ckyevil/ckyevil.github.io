@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="服务端 copy 2.css">
+    <link rel="icon" type="image/x-icon" href="../picture/favicon.ico">
+</head>
+<body>
+  <span class="js-cursor-container"></span>
+  <div class="navbar">
+    <a href="客户端.html">Client</a>
+    <a href="服务端.html">Server</a>
+    <a href="应用端.html">Apply</a>
+  </div>
+
+  <div class="scroll-box" id="scrollBox">
+    <div class="record">
+        <input type="checkbox" id="record1">
+        <label for="record1">Ak</label>
+    </div>
+    <div class="record">
+        <input type="checkbox" id="record2">
+        <label for="record2">Bi</label>
+    </div>
+    <div class="record">
+      <input type="checkbox" id="record3">
+      <label for="record3">CO</label>
+    </div>
+    <div class="record">
+      <input type="checkbox" id="record3">
+      <label for="record3">DP</label>
+    </div>
+    <div class="record">
+      <input type="checkbox" id="record3">
+      <label for="record3">EW</label>
+    </div>
+    <div class="record">
+      <input type="checkbox" id="record3">
+      <label for="record3">FC</label>
+    </div>
+    <div class="record">
+      <input type="checkbox" id="record3">
+      <label for="record3">GQ</label>
+    </div>
+    <div class="record">
+      <input type="checkbox" id="record3">
+      <label for="record3">HC</label>
+    </div>
+    <div class="record">
+      <input type="checkbox" id="record3">
+      <label for="record3">IC</label>
+    </div>
+    <div class="record">
+      <input type="checkbox" id="record3">
+      <label for="record3">GOUPL</label>
+    </div>
+  
+</div>
+<button id="confirmButton">确认</button>
+
+
+<div id="dropdownsContainer">
+  <button id="addDropdown">+</button>
+  <button id="remove-button">-</button>
+</div>
+  <select id="firstDropdown" onchange="populateSecondDropdown()">
+    <option value="" disabled selected>Select A Model</option>
+    <option value="AlexNet">AlexNet</option>
+    <option value="densenet_121">densenet_121</option>
+    <option value="RestNet18">RestNet18</option>
+  </select>
+
+  <select id="secondDropdown" onchange="populateSecondDropdown()">
+    <option value="" disabled selected>Select A FLMethod</option>
+    <option value="Fed_Avg">Fed_Avg</option>
+    <option value="Fed_Prox">Fed_Prox</option>
+    <option value="Fed_BEAL">Fed_BEAL</option>
+  </select>
+
+<!-- <button class="addbutton" onclick="addInputField()"></button>
+<button class="removebutton" onclick="removeInputField()"></button> -->
+
+<!-- <div id="inputFields">
+    <div class="input-container"></div>
+</div>
+
+<button class="submit" onclick="submitForm()"></button> -->
+
+<button class="submit" onclick="submitForm()"></button>
+<button id="goBackBtn">Go Back</button>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="服务端 copy 2.js"></script>
+</body>
+</html>

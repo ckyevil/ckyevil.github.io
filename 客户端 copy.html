@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="客户端 copy.css">
+  <title>上传ID和ZIP文件</title>
+</head>
+<body>
+  <div class="navbar">
+    <a href="客户端.html">Client</a>
+    <a href="服务端.html">Server</a>
+    <a href="应用端.html">Apply</a>
+  </div>
+
+  <span class="js-cursor-container"></span>
+  <button class="custom-button" onclick="showUpload()">Custom Script</button>
+  <button class="inherent-button" onclick="showDropdowns()">Inherent Script</button>
+  
+
+  <div id="uploadSection" class="hidden">
+    <label for="fileInput" class="scriptbutton">Choose Your Script</label>
+    <input type="file" id="fileInput" style="display: none;"onchange="updateFileName1(this)">
+    <span id="scriptname"></span>
+  </div>
+
+  <div id="dropdownSection" class="hidden">
+    <select id="firstDropdown" onchange="populateSecondDropdown()">
+      <option value="" disabled selected>Select A Model</option>
+      <option value="AlexNet">AlexNet</option>
+      <option value="densenet_121">densenet_121</option>
+      <option value="RestNet18">RestNet18</option>
+    </select>
+    <select id="secondDropdown">
+      <option value="" disabled selected>Select A Device</option>
+      <option value="Cpu">Cpu</option>
+      <option value="Cuda">Cuda</option>
+    </select>
+  </div>
+    <input type="text" id="id" name="id" placeholder="Input ID" required><br>
+    <label for="file-upload" class="xuanzebutton">选择文件</label>
+    <input type="file" id="file-upload" style="display: none;"onchange="updateFileName2(this)">
+    <span id="file-name"></span>
+    <input type="submit" value="提交" onclick="submitForm()" >
+    <div id="popup" class="popup">平台正在遭受攻击！ 后台正在紧急防御！ 请勿操作!</div>
+    <button id="goBackBtn">Go Back</button>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="客户端 copy.js"></script>
+</body>
+</html>

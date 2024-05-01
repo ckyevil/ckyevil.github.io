@@ -1,0 +1,105 @@
+
+body {
+    padding: 50px;
+    background-image: url('../picture/comment.png'); /* 设置背景照片的路径 */
+    background-size: cover; /* 让背景照片铺满整个页面 */
+    background-position: center center;
+    min-height: 100vh; /* 设置最小高度为视口高度 */
+    animation: backgroundAnimation 0.8s infinite; /* 应用名为backgroundAnimation的动画，循环时间为10秒 */
+    animation-delay: 0.3s; /* 设置1秒延迟 */
+}
+   @keyframes backgroundAnimation {
+    0% { background-image: url('../picture/comment.png'); }
+    50% { background-image: url('../picture/comment.png'); }
+    100% { background-image: url('../picture/comment.png'); }
+  }
+
+.navbar {
+    width: 72%;
+    height: 6%;
+    position: absolute;
+    top: 2%;
+    left: 14%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7); /* 白色背景带有一定透明度 */
+    color: rgb(52, 124, 233); /* 蓝色字体 */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .navbar a {
+    font-family: '可爱', sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    color: inherit;
+  }
+  @font-face {
+    font-family: '可爱';
+    src: url('../font/DripOctober-vm0JA.ttf') format('truetype');
+    
+    /* 其他字体格式的引用 */
+  }
+  #goBackBtn{
+    position: absolute;
+    top: 92%;
+    left: 2.5%;
+    width: 10%;
+    height: 7%;
+    background-color: rgba(255, 255, 255, 0.721);
+    color: rgb(52, 124, 233); 
+    font-size: 25px;
+    border: none;
+    border-radius: 10px;
+    font-family: '可爱', sans-serif;
+    cursor: pointer;
+  }
+
+
+#textInput{
+     position: absolute; /* 设置为绝对定位 */
+        top: 35%; /* 从顶部偏移50px */
+        left: 25%; /* 从左侧偏移50px */
+        width: 50%; /* 设置宽度为200px */
+        height: 25%; /* 设置高度为30px */
+        padding: 5px; /* 设置内边距 */
+        border: 1px solid #ccc; /* 设置边框 */
+        border-radius: 4px; /* 设置边框圆角 */
+        font-size: 22px;
+       color: #4a4a4ac9;
+      }
+#submitButton{
+  position: absolute;
+  top: 68%;
+  left: 43%;
+  width: 16%;
+  height: 10%;
+  background-color:rgb(82, 104, 247); /* 浅蓝色 */
+  color: white;
+  border: none;
+  padding: 10px 15px; /* 调整按钮的内边距 */
+  font-size: 40px; /* 调整按钮的字体大小 */
+  cursor: pointer;
+  border-radius: 25px; /* 圆角边框 */
+  transition: background-color 0.3s ease; /* 添加过渡效果 */
+  margin: 10px 0; /* 设置垂直外边距 */
+  box-sizing: border-box; /* 让元素的宽度包括内边距和边框，而不会再额外增加宽度 */
+}
+#commentButton{
+  position: absolute;
+  top: 84%;
+  left: 43%;
+  width: 16%;
+  height: 10%;
+  background-color:rgb(82, 104, 247); /* 浅蓝色 */
+  color: white;
+  border: none;
+  padding: 10px 15px; /* 调整按钮的内边距 */
+  font-size: 40px; /* 调整按钮的字体大小 */
+  cursor: pointer;
+  border-radius: 25px; /* 圆角边框 */
+  transition: background-color 0.3s ease; /* 添加过渡效果 */
+  margin: 10px 0; /* 设置垂直外边距 */
+  box-sizing: border-box; /* 让元素的宽度包括内边距和边框，而不会再额外增加宽度 */
+}

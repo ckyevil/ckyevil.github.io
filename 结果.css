@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3498db;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px;
+    min-height: 100vh; /* 设置最小高度为视口高度 */
+    background-image: url('../picture/精准度显示.PNG'); /* 设置背景照片的路径 */
+    background-size: cover; 
+    animation: backgroundAnimation 1.6s infinite; /* 应用名为backgroundAnimation的动画，循环时间为10秒 */
+    animation-delay: 0.3s; /* 设置1秒延迟 */
+  }
+  /* @keyframes backgroundAnimation {
+    0% { background-image: url('../picture/加载1.PNG'); }
+    25% { background-image: url('../picture/加载2.PNG'); }
+    50% { background-image: url('../picture/加载3.PNG'); }
+    75% { background-image: url('../picture/加载4.PNG'); }
+    100% { background-image: url('../picture/加载1.PNG'); }
+  }
+   */
+  #result {
+    position: absolute;
+    font-family:'可爱', sans-serif ;
+    top: 29.5%;
+    left: 67%;
+    font-size: 35px; /* 修改文字大小 */
+    font-weight: bold; /* 设置文字加粗 */
+    color: #242298; /* 设置文字颜色 */
+    opacity: 0.8;
+}
+
+
+  /* 图片上传框 */
+  #image-box {
+    width: 9%;
+    height: 19%;
+    border: 0px dashed #ccc;
+    position:absolute;
+    top: 55.5%;
+    left: 28.5%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:transparent;
+  }
+  #image-preview {
+    /* max-width: 100%; */
+    max-height: 100%;
+    object-fit: fill;
+    display: none;
+  }
+  #file-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  input[type="submit"] {
+    position: absolute;
+    top: 86%;
+    left: 32%;
+    width: 10%;
+    height: 8%;
+    background-color:transparent; /* 浅蓝色 */
+    color: transparent;
+    border: none;
+    padding: 10px 15px; /* 调整按钮的内边距 */
+    font-size: 25px; /* 调整按钮的字体大小 */
+    cursor: pointer;
+    border-radius: 25px; /* 圆角边框 */
+    transition: background-color 0.3s ease; /* 添加过渡效果 */
+    margin: 10px 0; /* 设置垂直外边距 */
+    box-sizing: border-box; /* 让元素的宽度包括内边距和边框，而不会再额外增加宽度 */
+   
+  }
+
+  
+  .navbar {
+    width: 72%;
+    height: 6%;
+    position: absolute;
+    top: 2%;
+    left: 14%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7); /* 白色背景带有一定透明度 */
+    color: rgb(52, 124, 233); /* 蓝色字体 */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .navbar a {
+    font-family: '可爱', sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    color: inherit;
+  }
+  @font-face {
+    font-family: '可爱';
+    src: url('../font/DripOctober-vm0JA.ttf') format('truetype');
+    
+    /* 其他字体格式的引用 */
+  }
+  
+  #image{
+    max-width: 30%; /* 设置图片最大宽度 */
+    max-height: 25%; /* 设置图片最大高度 */
+    width: auto; /* 图片宽度自适应 */
+    height: auto; /* 图片高度自适应 */
+    position: absolute;
+    top: 50%;
+    left: 59%;
+    background-color: #363636;
+  }
+  #goBackBtn{
+    position: absolute;
+    top: 92%;
+    left: 2.5%;
+    width: 10%;
+    height: 7%;
+    background-color: rgba(255, 255, 255, 0.721);
+    color: rgb(52, 124, 233); 
+    font-size: 25px;
+    border: none;
+    border-radius: 10px;
+    font-family: '可爱', sans-serif;
+    cursor: pointer;
+  }
+  #sendBtn{
+    position: absolute;
+    top: 86%;
+    left: 32%;
+    width: 10%;
+    height: 8%;
+    background-color:transparent; /* 浅蓝色 */
+    color: transparent;
+    border: none;
+    padding: 10px 15px; /* 调整按钮的内边距 */
+    font-size: 25px; /* 调整按钮的字体大小 */
+    cursor: pointer;
+    border-radius: 25px; /* 圆角边框 */
+    transition: background-color 0.3s ease; /* 添加过渡效果 */
+    margin: 10px 0; /* 设置垂直外边距 */
+    box-sizing: border-box; /* 让元素的宽度包括内边距和边框，而不会再额外增加宽度 */
+  }
+  #message{
+    position:absolute;
+    top: 92%;
+    left: 63.5%;
+    font-size: 25px;
+    font-family: '可爱', sans-serif;
+    color: rgba(255, 255, 255, 0.737); 
+  }
+  #loading1 img {
+    position: absolute;
+    top: 29.5%;
+    left: 65.5%;
+    width: 8%; /* 设置图片宽度 */
+    height: 5%; /* 自动计算高度，保持等比例缩小 */
+    opacity: 0.7; 
+  }#loading2 img {
+    position: absolute;
+    top: 52%;
+    left: 63%;
+    width: 11%; /* 设置图片宽度 */
+    height: 9%; /* 自动计算高度，保持等比例缩小 */
+    opacity: 0.7; 
+  }#loading3 img {
+    position:absolute;
+    top: 91.6%;
+    left: 63.2%;
+    width: 7%; /* 设置图片宽度 */
+    height: 5%; /* 自动计算高度，保持等比例缩小 */
+    opacity: 0.7; 
+  }

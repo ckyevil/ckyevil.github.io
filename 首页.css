@@ -1,0 +1,347 @@
+html {
+	cursor: none;
+	--text: #FFF;
+	background: #001220;
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+  body {
+	position: relative;
+	margin: 0;
+	padding: 0;
+  }
+  
+  .top-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 70%;
+	background-image: url('../picture/1.PNG');
+	background-repeat: no-repeat;
+
+  }
+  
+  .middle-image {
+	position: absolute;
+	top: 1000px;
+	left: 0;
+	width: 100%;
+	height: 70%;
+	background-image: url('../picture/背景2.PNG');
+	background-repeat: no-repeat;
+
+  }
+  
+  /* .bottom-image {
+	position: absolute;
+	top: 2080px;
+	left: 0;
+	width: 100%;
+	height: 41%;
+	background-image: url('../picture/3.PNG');
+	background-repeat: no-repeat;
+
+  } */
+  
+  header {
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	padding: 1.5rem;
+}
+
+nav {
+	width: 100%;
+	background-color: rgba(76, 76, 76, 0.36);
+	color: black;
+	padding: 10px 0;
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
+	border-radius: 5rem;
+	backdrop-filter: blur(4px);
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+  justify-content: space-between;
+	width: 80%;
+	li {
+		font-weight: bold;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: var(--text);
+	
+}
+  
+  .welcome-message {
+    text-align: center; /* 文字水平居中 */
+
+    color: #fff; /* 文字颜色 */
+  }
+  
+  .welcome-message h1 {
+    position: absolute;
+    font-family: 'Arial Black', sans-serif; /* 使用厚重字体 */
+    font-size: 68px; /* 设置字体大小 */
+    letter-spacing: 10px; /* 设置字间距 */
+    text-transform: uppercase; /* 文字转换为大写 */
+    top: 55px; /* 修改top属性来改变文字的垂直位置 */
+    left: 50%; 
+    transform: translateX(-50%); /* 保持水平居中 */
+  }
+
+  .content {
+    height: 2000px; /* 用于产生滚动条 */
+  }
+  
+  .login-register {
+    position: fixed; /* 固定在右上角 */
+    top: 20px; /* 距离顶部的距离 */
+    right: 20px; /* 距离右侧的距离 */
+  }
+  
+  .login-register a {
+    margin-left: 10px; /* 调整按钮之间的间距 */
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    color: #333;
+    background-color: #ffffff;
+  }
+  
+  .login-register a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  
+
+section {
+	height: 120vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h2 {
+    transition: font-size 300ms ease-out;
+    font-size: 20vw;
+    color: #fff;
+    background: linear-gradient(45deg, #09009f, #00ff95 80%);
+    -webkit-background-clip: text; /* 旧版浏览器兼容 */
+    background-clip: text; /* 标准语法，覆盖旧版浏览器 */
+    color: transparent; /* 使文字透明以展现渐变效果 */
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+  }
+  
+
+@media (min-width: 1200px) {
+	h2 {
+		font-size: 16.5rem;
+	}
+}
+
+
+
+/* #portfolio {
+	background: url("../picture/IMG_0893.PNG");
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#press {
+	background: url('../picture/IMG_0891.PNG');
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	h2 {
+		background: -webkit-linear-gradient(0deg, rgba(249,113,9,1) 0%, rgba(236,155,33,1) 35%, rgba(255,185,19,1) 100%);
+		background-clip: text;
+    -webkit-text-fill-color: transparent;
+	}
+}
+
+#shop {
+	background: url('');
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+} */
+
+
+/* // ----------
+// ANIMATIONS
+// ---------- */
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+		opacity: 1;
+	}
+	50% {
+		transform: scale(1.25);
+		opacity: 0.25;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-150%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(var(--slide-translate-y));
+  }
+}
+
+/* #Client{
+	position: absolute;
+	height: 3%;
+	width: 15%;
+	top: 98%;
+	left: 15%;
+	color: #ffffff;
+	font-family: '可爱', sans-serif;
+	font-weight: bold;
+	font-size: 38px;
+	border: none;
+	border-radius: 15px;
+	background-color: rgba(255, 229, 96, 0.678);
+	cursor: pointer;
+}
+#Server{
+	position: absolute;
+	height: 3%;
+	width: 15%;
+	top: 98%;
+	left: 45%;
+	color: #ffffff;
+	font-family: '可爱', sans-serif;
+	font-weight: bold;
+	font-size: 38px;
+	border: none;
+	border-radius: 15px;
+	background-color: rgba(255, 229, 96, 0.678);
+	cursor: pointer;
+}
+#Apply{
+	position: absolute;
+	height: 3%;
+	width: 15%;
+	top: 98%;
+	left: 75%;
+	color: #ffffff;
+	font-family: '可爱', sans-serif;
+	font-weight: bold;
+	font-size: 38px;
+	border: none;
+	border-radius: 15px;
+	background-color: rgba(255, 229, 96, 0.678);
+	cursor: pointer;
+
+} */
+
+.navbar {
+    width: 72%;
+    height: 2%;
+    position: absolute;
+    top: 98%;
+    left: 14%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7); /* 白色背景带有一定透明度 */
+    color: rgb(52, 124, 233); /* 蓝色字体 */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .navbar a {
+    font-family: '可爱', sans-serif;
+    font-size: 35px;
+    text-decoration: none;
+    color: inherit;
+  }
+  @font-face {
+    font-family: '可爱';
+    src: url('../font/DripOctober-vm0JA.ttf') format('truetype');
+    
+    /* 其他字体格式的引用 */
+  }
+#img1{
+	width:35%; /* 设置图片宽度为200像素 */
+    height: auto; /* 保持图片高度自适应 */
+	position: absolute;
+	top: 0%;
+	left: 47%;
+	opacity: 0.8;
+  }
+  #img2{
+	width:44%; /* 设置图片宽度为200像素 */
+    height: auto; /* 保持图片高度自适应 */
+	position: absolute;
+	top: 8%;
+	left: 51%;
+	opacity: 0.8;
+  }
+  #img3{
+	width:59%; /* 设置图片宽度为200像素 */
+    height: auto; /* 保持图片高度自适应 */
+	position: absolute;
+	top: 22.5%;
+	left: 30%;
+	opacity: 0.8;
+  }
+  #imgt1{
+	width:85%; /* 设置图片宽度为200像素 */
+    height: auto; /* 保持图片高度自适应 */
+	position: absolute;
+	top: 16%;
+	left: 14%;
+	opacity: 0.88;
+  }
+  #imgt2{
+	width:70%; /* 设置图片宽度为200像素 */
+    height: auto; /* 保持图片高度自适应 */
+	position: absolute;
+	top: 27%;
+	left: 22%;
+	opacity: 0.8;
+  }
+
+  .rounded-box {
+	position: absolute;
+	top: 73%;
+	left: 10%;
+    width: 80%; /* 设置矩形宽度 */
+    height: 19%; /* 设置矩形高度 */
+    background-color: rgba(255, 255, 255, 0.7); /* 设置白色背景色，并指定不透明度为70% */
+    border-radius: 10px; /* 设置圆角半径为10px */
+}
+#imgb1 {
+	width: 70%;
+	height: auto;
+    position: absolute;
+    top: 71.3%;
+    left: 16%;
+    z-index: 999; /* 设置 z-index 值足够大，确保图片置顶显示 */
+}

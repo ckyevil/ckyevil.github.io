@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="应用端.css">
+    <title>隐私星链</title>
+  <link rel="icon" type="image/x-icon" href="../picture/favicon.ico">
+</head>
+<body>
+  <span class="js-cursor-container"></span>
+  <div style="display: none;">
+    <img src="../picture/loading (3).gif" alt="">
+  </div>
+  <div class="navbar">
+    <a href="客户端.html">Client</a>
+    <a href="服务端 copy.html">Server</a>
+    <a href="应用端.html">Apply</a>
+  </div>
+  <select id="dynamicDropdown">
+    <!-- 动态生成的选项将显示在这里 -->
+</select>
+<select id="newDropdown">
+</select>
+
+<button id="submitButton" onclick="submitForm()"></button>
+<div id="loading" style="display: none;">
+  <img src="../picture/loading (3).gif" alt="Loading...">
+</div>
+
+<div id="loading1" style="display: none;">
+  <img src="../picture/loading (3).gif" alt="Loading...">
+</div>
+
+
+<div id="image-box">
+  <img id="image-preview" src="#" >
+  <input type="file" id="file-input">
+</div>
+<div id="result"></div>
+<div id="msg"></div>
+<button id="submitImageBtn" onclick="submitForm1()"></button>
+<button id="goBackBtn">Go Back</button>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="应用端.js"></script>
+</body>
+</html>

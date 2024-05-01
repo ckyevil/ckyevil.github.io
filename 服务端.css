@@ -1,0 +1,147 @@
+
+body {
+    padding: 50px;
+    background-image: url('../picture/server.PNG'); /* 设置背景照片的路径 */
+    background-size: cover; /* 让背景照片铺满整个页面 */
+    background-position: center center;
+    min-height: 100vh; /* 设置最小高度为视口高度 */
+    animation: backgroundAnimation 0.8s infinite; /* 应用名为backgroundAnimation的动画，循环时间为10秒 */
+}
+
+
+.navbar {
+    width: 72%;
+    height: 6%;
+    position: absolute;
+    top: 2%;
+    left: 14%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7); /* 白色背景带有一定透明度 */
+    color: rgb(52, 124, 233); /* 蓝色字体 */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .navbar a {
+    font-family: '可爱', sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    color: inherit;
+  }
+  @font-face {
+    font-family: '可爱';
+    src: url('../font/DripOctober-vm0JA.ttf') format('truetype');
+    
+    /* 其他字体格式的引用 */
+  }
+  
+  .addbutton{
+    position: absolute;
+    top: 19%;
+    left: 77%;
+    width: 6%;
+    height: 7%;
+    border: none;
+    background-color:transparent;
+    cursor: pointer;
+  }
+
+  .removebutton{
+    position: absolute;
+    top: 19%;
+    left: 68%;
+    width: 6%;
+    height: 7%;
+    border: none;
+    background-color:transparent;
+    cursor: pointer;
+  }
+
+  .submit{
+    position: absolute;
+    top: 84%;
+    left: 41%;
+    width: 17.5%;
+    height: 12%;
+    border-radius: 10px;
+    border: none;
+    background-color:transparent;
+    cursor: pointer;
+  }
+
+  .custom-input {
+    width: 280px; /* 设置输入框宽度 */
+    height: 60px; /* 设置输入框高度 */
+    margin-bottom: 10px; /* 设置输入框间距 */
+    background-color: rgb(255, 255, 255); /* 设置输入框背景颜色 */
+    border: 2px solid #000000; /* 设置输入框边框 */
+    border-radius: 5px; /* 设置输入框圆角 */
+    padding: 5px; /* 设置内边距 */
+    box-sizing: border-box; /* 让 padding 不会撑大输入框 */
+    font-size: 25px;
+    font-family: '可爱', sans-serif;
+    color: #000000a0;
+}
+
+
+/* 设置框与框之间的距离 */
+.custom-input + .custom-input {
+    margin-top: 20px; /* 设置框与框之间的顶部距离 */
+}
+.input-label {
+    font-family: '可爱', sans-serif;
+    font-size: 25px;
+    color: rgb(52, 124, 233);
+    font-weight: bold; /* 加粗字体 */
+    margin-right: 10px; /* 右侧间距 */
+}
+.input-container{
+    display: flex; /* 使用Flexbox布局 */
+    align-items: center; /* 垂直居中对齐 */
+}
+#inputFields{
+    position: absolute;
+    top: 24%;
+    left: 37%;
+}
+
+#goBackBtn{
+  position: absolute;
+  top: 92%;
+  left: 2.5%;
+  width: 10%;
+  height: 7%;
+  background-color: rgba(255, 255, 255, 0.721);
+  color: rgb(52, 124, 233); 
+  font-size: 25px;
+  border: none;
+  border-radius: 10px;
+  font-family: '可爱', sans-serif;
+  cursor: pointer;
+}
+#firstDropdown{
+  position: absolute;
+  top: 67%;
+  left: 68%;
+  font-family: '可爱', sans-serif;
+  background-color: rgb(52, 124, 233); 
+  color: rgba(255, 255, 255, 0.7);
+  width: 150px; /* 设置选择框的宽度 */
+  height: 40px; /* 设置选择框的高度 */
+  font-size: 16px; /* 设置选择框中文字的大小 */
+  border-radius: 5px;
+}
+#secondDropdown{
+  position: absolute;
+  top: 75%;
+  left: 68%;
+  font-family: '可爱', sans-serif;
+  background-color:rgb(52, 124, 233); 
+  color: rgba(255, 255, 255, 0.739);
+  width: 150px; /* 设置选择框的宽度 */
+  height: 40px; /* 设置选择框的高度 */
+  font-size: 16px; /* 设置选择框中文字的大小 */
+  border-radius: 5px;
+}
