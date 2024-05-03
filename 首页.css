@@ -15,7 +15,7 @@ body {
   .top-image {
 	position: absolute;
 	width: 100%;
-	height: 140vh; /* 占据父容器高度的一半 */
+	height: 150vh; /* 占据父容器高度的一半 */
 	background-repeat: no-repeat;
 	background-size: cover;
 	top: 0;
