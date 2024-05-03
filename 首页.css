@@ -30,7 +30,7 @@ body {
 }
 
 .middle-image {
-  top: 50vh; /* 上一个图片高度的百分比 */
+  top: 100vh; /* 上一个图片高度的百分比 */
   background-image: url('背景2.PNG');
 }
   
