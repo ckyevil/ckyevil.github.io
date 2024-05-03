@@ -16,28 +16,28 @@ body {
 	margin: 0;
 	padding: 0;
   }
-  
-  .top-image {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 70%;
-	background-image: url('1.PNG');
-	background-repeat: no-repeat;
+  .container {
+  position: relative;
+  height: 200vh; /* 设置容器高度为屏幕高度的两倍，以便有足够的滚动空间 */
+}
+.top-image, .middle-image {
+  position: absolute;
+  width: 100%;
+  height: 50vh; /* 占据父容器高度的一半 */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  }
-  
-  .middle-image {
-	position: absolute;
-	top: 1000px;
-	left: 0;
-	width: 100%;
-	height: 70%;
-	background-image: url('背景2.PNG');
-	background-repeat: no-repeat;
+.top-image {
+  top: 0;
+  background-image: url('1.PNG');
+}
 
-  }
+.middle-image {
+  top: 50vh; /* 上一个图片高度的百分比 */
+  background-image: url('背景2.PNG');
+}
+  
   
   /* .bottom-image {
 	position: absolute;
