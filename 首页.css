@@ -6,33 +6,31 @@ html {
 }
 
 body {
-	  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
   
-}
-
-
-  .container {
-  position: relative;
-  height: 200vh; /* 设置容器高度为屏幕高度的两倍，以便有足够的滚动空间 */
-}
-.top-image, .middle-image {
-  position: absolute;
-  width: 100%;
-  height: 50vh; /* 占据父容器高度的一半 */
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.top-image {
-  top: 0;
-  background-image: url('1.PNG');
-}
-
-.middle-image {
-  top: 100vh; /* 上一个图片高度的百分比 */
-  background-image: url('背景2.PNG');
-}
+  .top-image {
+	position: absolute;
+	width: 100%;
+	height: 140vh; /* 占据父容器高度的一半 */
+	background-repeat: no-repeat;
+	background-size: cover;
+	top: 0;
+	background-image: url('1.PNG');
+  }
+  
+  .middle-image {
+	position: absolute;
+	width: 100%;
+	height: 250vh; /* 占据父容器高度的一半 */
+	background-repeat: no-repeat;
+	background-size: cover;
+	top: 140vh; /* 上一个图片高度的百分比 */
+	background-image: url('背景2.PNG');
+  }
   
   
   /* .bottom-image {
@@ -257,11 +255,11 @@ h2 {
 } */
 
 .navbar {
-    width: 72%;
-    height: 2%;
+    width: 150vh;
+    height: 7vh;
     position: absolute;
-    top: 98%;
-    left: 14%;
+    top: 370vh;
+    left: 14vh;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.7); /* 白色背景带有一定透明度 */
     color: rgb(52, 124, 233); /* 蓝色字体 */
@@ -284,60 +282,61 @@ h2 {
     /* 其他字体格式的引用 */
   }
 #img1{
-	width:35%; /* 设置图片宽度为200像素 */
+	width:60vh; /* 设置图片宽度为200像素 */
     height: auto; /* 保持图片高度自适应 */
 	position: absolute;
-	top: 0%;
-	left: 47%;
+	top: -7vh;
+	left: 65vh;
 	opacity: 0.8;
   }
   #img2{
-	width:44%; /* 设置图片宽度为200像素 */
+	width:75vh; /* 设置图片宽度为200像素 */
     height: auto; /* 保持图片高度自适应 */
 	position: absolute;
-	top: 8%;
-	left: 51%;
+	top: 15vh;
+	left: 81vh;
 	opacity: 0.8;
   }
   #img3{
-	width:59%; /* 设置图片宽度为200像素 */
+	width:99vh; /* 设置图片宽度为200像素 */
     height: auto; /* 保持图片高度自适应 */
 	position: absolute;
-	top: 22.5%;
-	left: 30%;
+	top: 55vh;
+	left: 50vh;
 	opacity: 0.8;
   }
   #imgt1{
-	width:85%; /* 设置图片宽度为200像素 */
+	width:170vh; /* 设置图片宽度为200像素 */
     height: auto; /* 保持图片高度自适应 */
 	position: absolute;
-	top: 16%;
-	left: 14%;
+	top: 40vh;
+	left: 20vh;
 	opacity: 0.88;
   }
   #imgt2{
-	width:70%; /* 设置图片宽度为200像素 */
+	width:150vh; /* 设置图片宽度为200像素 */
     height: auto; /* 保持图片高度自适应 */
 	position: absolute;
-	top: 27%;
-	left: 22%;
+	top: 65vh;
+	left: 16%;
 	opacity: 0.8;
   }
 
   .rounded-box {
 	position: absolute;
-	top: 73%;
-	left: 10%;
-    width: 80%; /* 设置矩形宽度 */
-    height: 19%; /* 设置矩形高度 */
+	top: 270vh;
+	left: 25vh;
+    width: 130vh; /* 设置矩形宽度 */
+    height: 80vh; /* 设置矩形高度 */
     background-color: rgba(255, 255, 255, 0.7); /* 设置白色背景色，并指定不透明度为70% */
     border-radius: 10px; /* 设置圆角半径为10px */
 }
 #imgb1 {
-	width: 70%;
+	width: 120vh;
 	height: auto;
     position: absolute;
-    top: 71.3%;
-    left: 16%;
+    top: 270vh;
+    left: 30vh;
     z-index: 999; /* 设置 z-index 值足够大，确保图片置顶显示 */
 }
+
